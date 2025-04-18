@@ -8,11 +8,11 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SearchCodeExample {
     @BeforeAll
-    static void beforeAll() {
+    static void setBrowserSize() {
         Configuration.browserSize = "1920x1080";
     }
 @Test
-    void CodeExampleShouldDisplayed() {
+    void codeExampleShouldDisplayedTest() {
     //Открыть страницу Selenide в Github
     open("https://github.com/selenide/selenide/");
     //Перейти в раздел Wiki проекта
